@@ -1,0 +1,19 @@
+void display()
+{
+        struct node *ptr;
+        if(start==NULL)
+        {
+                printf("nList is empty:n");
+                return;
+        }
+        else
+        {
+                ptr=start;
+                printf("nThe List elements are:n");
+                while(ptr!=NULL)
+                {
+                        printf("%dt",ptr->info );
+                        ptr=ptr->next ;
+                }
+        }
+}
